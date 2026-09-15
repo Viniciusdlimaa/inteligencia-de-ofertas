@@ -1,0 +1,56 @@
+.score-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 110px;
+}
+
+.score-meter__top {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.score-meter__value {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.score-meter--lg .score-meter__value {
+  font-size: 26px;
+}
+
+.score-meter__band {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.score-meter__track {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--bg-inset);
+  overflow: hidden;
+}
+
+.score-meter__fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.score-meter--pending {
+  justify-content: center;
+}
+
+.score-meter__pending-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+}
+
+.score-meter__pending-hint {
+  font-size: 11.5px;
+  color: var(--text-tertiary);
+  line-height: 1.5;
+  margin-top: 2px;
+}

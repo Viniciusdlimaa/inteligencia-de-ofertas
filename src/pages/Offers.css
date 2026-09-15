@@ -1,0 +1,144 @@
+.filters-bar {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.filters-bar__search {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0 var(--space-3);
+  color: var(--text-tertiary);
+}
+
+.filters-bar__search input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 9px 0;
+  color: var(--text-primary);
+}
+
+.filters-bar__search input:focus {
+  outline: none;
+}
+
+.filters-bar select {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 9px 10px;
+  color: var(--text-primary);
+  min-width: 150px;
+}
+
+.offers-panel .panel__body {
+  padding: 0;
+}
+
+.offers-table-wrap {
+  overflow-x: auto;
+}
+
+.offers-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 780px;
+}
+
+.offers-table thead th {
+  text-align: left;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.offers-table tbody td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.offers-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.offers-table tbody tr:hover {
+  background: var(--bg-panel-raised);
+}
+
+.offers-table__name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.offers-table__name:hover {
+  color: var(--accent);
+}
+
+.offers-table__muted {
+  color: var(--text-secondary);
+}
+
+.mono-col {
+  text-align: right;
+}
+
+.offers-table__empty {
+  text-align: center;
+  color: var(--text-tertiary);
+  padding: var(--space-8) !important;
+}
+
+.offers-table__action-col {
+  width: 1%;
+  text-align: center;
+}
+
+.offers-table__delete-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-tertiary);
+}
+
+.offers-table__delete-btn:hover {
+  color: var(--trend-down);
+  border-color: var(--trend-down);
+  background: var(--trend-down-bg);
+}
+
+.confirm-delete__text {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+}
+
+.confirm-delete__text strong {
+  color: var(--text-primary);
+}
+
+@media (max-width: 700px) {
+  .filters-bar select {
+    min-width: 0;
+    flex: 1;
+  }
+}

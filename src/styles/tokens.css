@@ -1,0 +1,64 @@
+/* ===================================================================
+   Offer Intelligence — Design Tokens
+   Painel de inteligência de mercado: fundo escuro tipo "radar/terminal",
+   números em monoespaçada para leitura de dados, acento azul-sinal para
+   ações e verde/vermelho reservados exclusivamente para tendência.
+   =================================================================== */
+
+:root {
+  /* --- Cor base --- */
+  --bg-canvas: #0d0f14;
+  --bg-panel: #14171f;
+  --bg-panel-raised: #191d27;
+  --bg-inset: #0a0c11;
+  --border-subtle: #232733;
+  --border-strong: #2f3542;
+
+  --text-primary: #e9eaef;
+  --text-secondary: #9298a8;
+  --text-tertiary: #62687a;
+
+  /* --- Acento primário (ações, links, destaque) --- */
+  --accent: #4c8dff;
+  --accent-dim: #2a4c8f;
+  --accent-soft-bg: rgba(76, 141, 255, 0.12);
+
+  /* --- Semântica de tendência (uso exclusivo) --- */
+  --trend-up: #35d68f;
+  --trend-up-bg: rgba(53, 214, 143, 0.12);
+  --trend-down: #f2555f;
+  --trend-down-bg: rgba(242, 85, 95, 0.12);
+  --trend-flat: #9298a8;
+  --trend-flat-bg: rgba(146, 152, 168, 0.1);
+
+  /* --- Score (escala de calor) --- */
+  --score-high: #35d68f;
+  --score-mid: #e8b93d;
+  --score-low: #6b7180;
+
+  /* --- Tipografia --- */
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* --- Espaçamento --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+
+  /* --- Raio --- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+
+  /* --- Layout --- */
+  --sidebar-width: 232px;
+  --topbar-height: 64px;
+
+  /* --- Sombra (uso raro, apenas elevação real) --- */
+  --shadow-panel: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
