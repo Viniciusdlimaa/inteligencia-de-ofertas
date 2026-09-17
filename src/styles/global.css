@@ -89,6 +89,16 @@ textarea {
   margin-bottom: var(--space-5);
 }
 
+/* Estado de verificação de sessão (ProtectedRoute / Login). */
+.auth-checking {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.001ms !important;
